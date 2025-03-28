@@ -1,11 +1,12 @@
 /* Grunnleggende stiler for mobile enheter */
+* {
+    border: 2px solid red;
+  }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    overflow-y: scroll;
-    text-decoration: inherit;
   }
 html{
     scroll-behavior: smooth;
@@ -19,12 +20,15 @@ html{
   
   nav ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
     padding: 0;
   }
   
   nav ul li {
     display: inline-block;
     margin-right: 10px;
+    
   }
   
   nav ul li a {
@@ -48,14 +52,14 @@ html{
   }
   
   /* Stiler for større skjermer */
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     nav ul {
       display: flex;
       justify-content: center;
     }
   
     nav ul li {
-      margin-right: 20px;
+      margin-right: 200px;
     }
   
     main {
