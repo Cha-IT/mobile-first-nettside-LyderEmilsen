@@ -1,0 +1,73 @@
+/* Grunnleggende stiler for mobile enheter */
+* {
+    border: 2px solid red;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+html{
+    scroll-behavior: smooth;
+}
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Stiler for større skjermer */
+  @media (min-width: 992px) {
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin-right: 200px;
+    }
+  
+    main {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    section {
+      width: 30%;
+    }
+  }
