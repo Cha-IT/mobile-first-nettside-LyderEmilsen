@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#home">Hjem</a></li>
+          <li><a href="#menu">Meny</a></li>
+          <li><a href="#order">Bestill</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button id="toggle-navbar">☰</button> 
+  </header>
+  <main>
+    <section id="home">
+      <h1>Den grønne platen</h1>
+      <p>Oppdag vår deilige meny og bestill direkte fra mobilen.</p>
+    </section>
+    <section id="menu">
+      <h2>Meny</h2>
+      <ul id="menu-list">
+        
+      </ul>
+    </section>
+    <section id="order">
+      <h2>Din Bestilling</h2>
+      <ul id="order-list">
+        <!-- Bestillingsliste vil bli lagt til her -->
+      </ul>
+      <button id="submit-order">Send bestillingen</button>
+    </section>
+    <section id="contact">
+      <h2>Kontakt Oss</h2>
+      <p>Adresse: Kongens gate 5, 7011 Trondheim</p>
+      <p>Telefon: 73805520</p>
+      <div id="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.9999999999995!2d10.395052315999999!3d63.430514999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI1JzUwLjAiTiAxMMKwMjMnNDkuOCJF!5e0!3m2!1sno!2sno!4v1697040000000!5m2!1sno!2sno" 
+          width="400" 
+          height="250" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Min Kafé</p>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

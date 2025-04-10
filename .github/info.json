@@ -1,0 +1,38 @@
+[
+  {
+    "navn": "Biff Stroganoff",
+    "beskrivelse": "Mørt storfekjøtt i en kremet soppsaus, servert med ris.",
+    "pris": 189,
+    "bilde": "bilder/Biff-stroganoff-med-grønnsaker 2.0.jpg"
+  },
+  {
+    "navn": "Margherita Pizza",
+    "beskrivelse": "Klassisk italiensk pizza med tomatsaus, mozzarella og basilikum.",
+    "pris": 149,
+    "bilde": "bilder/margherita pizza.jpg"
+  },
+  {
+    "navn": "Sushi Mix",
+    "beskrivelse": "En miks av nigiri og maki med fersk fisk og grønnsaker.",
+    "pris": 219,
+    "bilde": "bilder/emoji-sushi-1000px.jpg"
+  },
+  {
+    "navn": "Vegetar Pad Thai",
+    "beskrivelse": "Risnudler stekt med tofu, peanøtter, bønnespirer og en smakfull saus.",
+    "pris": 169,
+    "bilde": "bilder/Vegetarian-Pad-Thai-Recipe.jpg"
+  },
+  {
+    "navn": "Laks med Asparges",
+    "beskrivelse": "Ovnsbakt laks med smørstekt asparges og dillpoteter.",
+    "pris": 199,
+    "bilde": "bilder/Grillet-laks-med-asparges-og-bearnaise-500x500.jpg"
+  },
+  {
+    "navn": "Sjokolade fondant",
+    "beskrivelse": "Lun sjokoladekake med flytende kjerne, servert med vaniljeis.",
+    "pris": 99,
+    "bilde": "bilder/Grete-Roede-194-sjokoladefondant-e1515416323845-1140x1123.webp"
+  }
+]
