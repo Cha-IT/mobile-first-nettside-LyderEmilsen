@@ -1,7 +1,7 @@
 /* Generell stil */
 body {
   font-family: 'Georgia', serif;
-  background-color: #f8f1e5;
+  background-color: hsla(284, 100%, 90%, 0.608);
   color: #4b2e2e;
   text-align: center;
   margin: 0;
@@ -11,18 +11,16 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Header */
 header {
-  background-color: #7c4f40;
-  color: white;
-  padding: 15px;
+  background-color: hsla(284, 100%, 90%, 0.608);
+
 }
 
 header h1 {
   font-size: 24px;
 }
 
-/* Navigasjon */
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -39,10 +37,10 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Seksjoner */
+
 section {
   padding: 20px;
-  background: white;
+  background: rgb(255, 251, 250);
   margin: 20px auto;
   width: 90%;
   max-width: 500px;
@@ -50,7 +48,7 @@ section {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Menyliste */
+
 #menu-list {
   padding: 0;
 }
@@ -58,22 +56,23 @@ section {
 .menu-item {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  background: #fff8e7;
+  background: #ffffff;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Bilder i menyen */
+
 .menu-item img {
   width: 70px;
   height: auto;
   border-radius: 5px;
 }
 
-/* Bestillingsknapp */
+
 button {
   background-color: #7c4f40;
   color: white;
@@ -88,7 +87,7 @@ button:hover {
   background-color: #5a3224;
 }
 
-/* Bestillingsliste */
+
 #order-list {
   list-style: none;
   padding: 0;
@@ -101,7 +100,7 @@ button:hover {
   border-radius: 5px;
 }
 
-/* Footer */
+
 footer {
   background-color: #7c4f40;
   color: white;
@@ -109,23 +108,84 @@ footer {
   margin-top: 20px;
 }
 
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #7c4f40;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+#navbar.hidden {
+  transform: translateY(-100%);
+}
+
+
+#toggle-navbar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #7c4f40;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1100; 
+}
+
+#toggle-navbar:hover {
+  background-color: #5a3224;
+}
+
   /* Stiler for større skjermer */
-  @media (min-width: 992px) {
-    nav ul {
+  @media (min-width: 768px) {
+    body {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
   
-    nav ul li {
-      margin-right: 200px;
+    nav ul {
+      gap: 10px;
+      font-size: 20px;
     }
   
     main {
       display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 5px;
+      width: 80%;
+      margin: auto;
+    }
+
+    #menu-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; 
+      padding: 0;
+    }
+    
+    .menu-item {
+      width: calc(50% - 20px); 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: space-between;
+      background: #ffffff;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      box-sizing: border-box;
     }
   
     section {
-      width: 30%;
+      width: 100%;
+      max-width: 1000px;
     }
   }

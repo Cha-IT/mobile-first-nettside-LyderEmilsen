@@ -4,8 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuList = document.getElementById("menu-list");
   const orderList = document.getElementById("order-list");
   const orderButton = document.getElementById("submit-order");
+  const navbar = document.getElementById("navbar");
+  const toggleNavbarButton = document.getElementById("toggle-navbar");
   let order = [];
+  let lastScrollY = window.scrollY;
 
+
+  toggleNavbarButton.addEventListener("click", () => {
+    navbar.classList.toggle("hidden");
+  });
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY) {
+      navbar.classList.add("hidden");
+    } 
+
+    lastScrollY = currentScrollY;
+  });
   if (meny && Array.isArray(meny)) {
     meny.forEach((item) => {
       const listItem = document.createElement("li");
@@ -68,3 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
